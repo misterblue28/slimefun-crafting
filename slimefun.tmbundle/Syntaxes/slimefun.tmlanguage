@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>SlimeFun</string>
+    <key>uuid</key>
+    <string>39985d08-6c2e-4beb-82bf-7cc60e309be6</string>
+    <key>scopeName</key>
+    <string>source.slimefun</string>
+    <key>fileTypes</key>
+    <array>
+        <string>sf</string>
+    </array>
+    <key>patterns</key>
+    <array>
+        <dict>
+            <key>name</key>
+            <string>keyword.operator</string>
+            <key>match</key>
+            <string>^([0-9]+\*)[a-z0-9_]+$</string>
+            <key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>constant.numeric</string>
+                </dict>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>entity.name.function</string>
+            <key>match</key>
+            <string>^([0-9]+\*)[a-z0-9_]+ </string>
+            <key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>constant.numeric</string>
+                </dict>
+            </dict>
+        </dict>
+        <dict>
+            <key>name</key>
+            <string>constant.numeric</string>
+            <key>match</key>
+            <string>[0-9]+\*</string>
+        </dict>
+    </array>
+</dict>
+</plist>
